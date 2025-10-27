@@ -17,13 +17,14 @@ export async function POST(req: NextRequest) {
     const user = userCredential.user;
 
     return NextResponse.json({ message: 'Login successful', uid: user.uid });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error(error);
-    return NextResponse.json({ error: error.message }, { status: 400 });
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    return NextResponse.json({ error: errorMessage }, { status: 400 });
   }
 }
 
 // GET: Test endpoint
-export async function GET(req: NextRequest) {
+export async function GET() {
   return NextResponse.json({ message: 'Firebase Auth API route is working!' });
 }

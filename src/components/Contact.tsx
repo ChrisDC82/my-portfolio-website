@@ -94,7 +94,7 @@ const Contact = () => {
       
       // Reset success message after 4 seconds
       setTimeout(() => setSubmitStatus('idle'), 4000);
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus('idle'), 4000);
     } finally {
@@ -126,7 +126,7 @@ const Contact = () => {
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Let's Connect</h3>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Let&apos;s Connect</h3>
             <div className="space-y-6">
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
@@ -341,7 +341,7 @@ const Contact = () => {
                     <svg className="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Thank you! Your message has been sent successfully. I'll get back to you soon!
+                    Thank you! Your message has been sent successfully. I&apos;ll get back to you soon!
                   </motion.div>
                 )}
 
