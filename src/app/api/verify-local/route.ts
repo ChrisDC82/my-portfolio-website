@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { adminAuth } from '@/lib/firebase-admin';
+import { getAdminAuth } from '@/lib/firebase-admin';
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,6 +19,7 @@ export async function POST(request: NextRequest) {
     // Verify the Firebase ID token
     let decodedToken;
     try {
+      const adminAuth = getAdminAuth();
       decodedToken = await adminAuth.verifyIdToken(idToken);
     } catch (error: unknown) {
       console.error('Error verifying Firebase token:', error);
