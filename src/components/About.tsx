@@ -26,7 +26,7 @@ const About = () => {
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto px-4">
-            A Producer learning to build with AI and Next.js, creating innovative digital experiences
+            I'm a storyteller exploring the world of coding.
           </p>
         </motion.div>
 

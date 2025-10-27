@@ -41,7 +41,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">Christopher</span>
+            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">Christopher Din Chong</span>
           </motion.h1>
           
           {/* Description Animation */}
@@ -51,7 +51,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            A passionate Producer mastering AI and Next.js, building innovative digital experiences that seamlessly bridge creativity and cutting-edge technology.
+            I'm a storyteller exploring the world of coding.
           </motion.p>
           
           {/* Buttons Animation */}
@@ -103,7 +103,7 @@ const Hero = () => {
               </svg>
             </a>
             <a
-              href="mailto:chris@example.com"
+              href="mailto:Christopheranthony101@gmail.com"
               className="text-white/70 hover:text-white transition-colors duration-200 hover:scale-110 transform"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
