@@ -1,7 +1,7 @@
 // src/app/api/auth/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../verify-local/firebaseConfig'; // Import the already initialized auth instance
+import { auth } from '@/lib/firebase'; // Import the already initialized auth instance
 
 // POST: Sign in with email and password
 export async function POST(req: NextRequest) {
