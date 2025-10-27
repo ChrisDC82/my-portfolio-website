@@ -51,7 +51,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            A Producer learning to build with AI and Next.js, creating innovative digital experiences that bridge creativity and technology.
+            A passionate Producer mastering AI and Next.js, building innovative digital experiences that seamlessly bridge creativity and cutting-edge technology.
           </motion.p>
           
           {/* Buttons Animation */}
