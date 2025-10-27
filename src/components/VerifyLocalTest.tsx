@@ -9,15 +9,15 @@ const VerifyLocalTest = () => {
   const [password, setPassword] = useState('');
   const [userId, setUserId] = useState('');
   const [verificationCode, setVerificationCode] = useState('');
-  const [result, setResult] = useState<any>(null);
+  const [result, setResult] = useState<Record<string, unknown> | null>(null);
   const [loading, setLoading] = useState(false);
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<{ email: string; getIdToken: () => Promise<string> } | null>(null);
 
   const handleSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      setUser(userCredential.user);
+      setUser(userCredential.user as { email: string; getIdToken: () => Promise<string> });
       console.log('Signed in:', userCredential.user);
     } catch (error) {
       console.error('Sign in error:', error);

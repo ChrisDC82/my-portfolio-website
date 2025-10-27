@@ -41,7 +41,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">Christopher</span>
+            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300">Christopher</span>
           </motion.h1>
           
           {/* Description Animation */}

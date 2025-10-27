@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     let decodedToken;
     try {
       decodedToken = await adminAuth.verifyIdToken(idToken);
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error verifying Firebase token:', error);
       return NextResponse.json(
         { error: 'Invalid Firebase token' },
@@ -80,7 +80,7 @@ export async function POST(request: NextRequest) {
       }
     });
 
-  } catch (error) {
+  } catch (error: unknown) {
     console.error('Error in verify-local API:', error);
     return NextResponse.json(
       { error: 'Internal server error' },

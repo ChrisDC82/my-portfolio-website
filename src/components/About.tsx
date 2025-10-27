@@ -41,17 +41,17 @@ const About = () => {
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">My Story</h3>
             <div className="space-y-3 sm:space-y-4 text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed">
               <p>
-                As a Producer with a passion for technology, I'm on an exciting journey learning to build 
+                As a Producer with a passion for technology, I&apos;m on an exciting journey learning to build 
                 with AI and Next.js. My background in creative production has given me a unique perspective 
                 on user experience and digital storytelling.
               </p>
               <p>
-                I'm fascinated by the intersection of creativity and technology, particularly how AI can 
+                I&apos;m fascinated by the intersection of creativity and technology, particularly how AI can 
                 enhance creative workflows and how modern web technologies can bring ideas to life. 
                 My goal is to bridge the gap between creative vision and technical implementation.
               </p>
               <p>
-                When I'm not learning new technologies, you can find me exploring the latest in AI tools, 
+                When I&apos;m not learning new technologies, you can find me exploring the latest in AI tools, 
                 experimenting with creative coding, or collaborating with other developers and creators 
                 in the tech community.
               </p>

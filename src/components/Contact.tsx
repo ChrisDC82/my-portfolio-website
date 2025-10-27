@@ -114,7 +114,7 @@ const Contact = () => {
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto px-4">
-            I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together!
+            I&apos;m always interested in new opportunities and exciting projects. Let&apos;s discuss how we can work together!
           </p>
         </motion.div>
 
@@ -290,7 +290,7 @@ const Contact = () => {
                         ? 'border-red-300 dark:border-red-700 bg-red-50 dark:bg-red-900/20 focus:ring-red-500 text-gray-900 dark:text-white' 
                         : 'border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 hover:border-gray-400 dark:hover:border-gray-500 text-gray-900 dark:text-white'
                     }`}
-                    placeholder="Tell me about your project, ideas, or just say hello! I'd love to hear from you."
+                    placeholder="Tell me about your project, ideas, or just say hello! I&apos;d love to hear from you."
                   />
                   <div className="flex justify-between items-center mt-1">
                     {errors.message && (
