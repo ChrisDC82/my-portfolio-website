@@ -1,8 +1,7 @@
-// app/api/verify-local/route.ts
+// src/app/api/auth/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from './firebaseConfig'; // Import the already initialized auth instance
-
+import { auth } from '../verify-local/firebaseConfig'; // Import the already initialized auth instance
 
 // POST: Sign in with email and password
 export async function POST(req: NextRequest) {
@@ -10,15 +9,12 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { email, password } = body;
 
-
     if (!email || !password) {
       return NextResponse.json({ error: 'Email and password are required' }, { status: 400 });
     }
 
-
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
-
 
     return NextResponse.json({ message: 'Login successful', uid: user.uid });
   } catch (error: any) {
@@ -26,7 +22,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: error.message }, { status: 400 });
   }
 }
-
 
 // GET: Test endpoint
 export async function GET(req: NextRequest) {
