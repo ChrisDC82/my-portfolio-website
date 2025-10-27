@@ -51,7 +51,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            I'm a storyteller exploring the world of coding.
+            I'm a storyteller bringing ideas to life through code.
           </motion.p>
           
           {/* Buttons Animation */}
